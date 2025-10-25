@@ -1,0 +1,269 @@
+================================================================================
+                 C PROGRAMMING FOR EMBEDDED SYSTEMS ENGINEERS
+                          Beginner-Level Guide
+================================================================================
+
+1. KEY CONCEPTS YOU MUST KNOW
+================================================================================
+
+A. DATA TYPES & MEMORY
+   - Understand fixed-width types: uint8_t, uint16_t, int32_t (essential for hardware)
+   - Know the size of each type using sizeof()
+   - Signed vs Unsigned: use unsigned for values that can't be negative
+   
+   Example for drone:
+   - Battery level: uint8_t (0-100%)
+   - Temperature: int16_t (-40 to +85°C)
+   - Timestamp: uint32_t (large counter)
+
+B. POINTERS (MOST IMPORTANT FOR EMBEDDED!)
+   - Pointers let you directly access memory → essential for hardware registers
+   - & gets address, * dereferences
+   - Pointer arithmetic: ptr++ moves to next memory location
+   
+   Real example: To control a motor, you write to a hardware register:
+   uint32_t *motor_register = (uint32_t *)0x40020000;  // Fixed address
+   *motor_register = 0xFF;  // Write value to register
+
+C. STRUCTS & BIT FIELDS
+   - Struct: groups related data (sensor readings, configuration)
+   - Bit fields: manipulate individual bits in hardware registers
+   
+   Example:
+   typedef struct {
+       float accel_x, accel_y, accel_z;
+       uint32_t timestamp;
+   } IMUSensorData;
+
+D. FUNCTIONS
+   - Organize code into modular pieces
+   - Pass parameters by value or by pointer
+   - Return types for error checking
+
+E. ARRAYS
+   - Store multiple values efficiently
+   - Use for sensor buffers, logging data
+   - Pointer arithmetic simplifies iteration
+
+F. CONTROL FLOW
+   - if/else for decisions
+   - for/while for loops
+   - switch for multiple conditions
+
+G. BIT MANIPULATION (Common in Embedded!)
+   - Set bit: value |= (1 << bit_position)
+   - Clear bit: value &= ~(1 << bit_position)
+   - Check bit: if (value & (1 << bit_position))
+   - Toggle bit: value ^= (1 << bit_position)
+
+================================================================================
+2. COMMON EMBEDDED PATTERNS
+================================================================================
+
+PATTERN 1: Hardware Register Access
+   #define MOTOR_CONTROL_REG ((uint32_t *)0x40001000)
+   *MOTOR_CONTROL_REG = speed_value;
+
+PATTERN 2: Sensor Reading Pipeline
+   uint16_t raw = read_adc();
+   float voltage = raw_to_voltage(raw);
+   int temp = voltage_to_temperature(voltage);
+
+PATTERN 3: State Machine
+   typedef enum {STATE_IDLE, STATE_ARMED, STATE_FLYING, STATE_ERROR} DroneState;
+   void update_state(DroneState current_state) { ... }
+
+PATTERN 4: Interrupt Handler
+   void timer_interrupt() {
+       // Time-critical code runs here
+       update_motor_speed();
+   }
+
+PATTERN 5: Filtering (Noise Reduction)
+   float filtered = alpha * raw + (1 - alpha) * previous;
+
+================================================================================
+3. BEST PRACTICES FOR EMBEDDED C
+================================================================================
+
+✓ DO:
+  - Use fixed-width integer types (uint8_t, not unsigned char)
+  - Keep ISR (interrupt service routines) short and fast
+  - Initialize all variables
+  - Check return values from functions
+  - Use meaningful variable names
+  - Add comments explaining hardware operations
+  - Use const for configuration values
+  - Validate input ranges
+
+✗ DON'T:
+  - Use malloc/free in real-time code (causes unpredictable delays)
+  - Have infinite loops without timeout protection
+  - Use global variables excessively (prefer structs)
+  - Forget to configure GPIO, I2C, SPI correctly
+  - Ignore watchdog timers
+  - Use floating point in time-critical code (use fixed-point instead)
+  - Forget to handle error states
+
+================================================================================
+4. PROGRAMS INCLUDED - WHAT THEY TEACH
+================================================================================
+
+01_hello_embedded.c
+   → Data types, sizes, fixed-width integers
+   → Output with printf for debugging
+   → Understanding memory layout
+
+02_pointers_arrays.c
+   → Pointers and dereferencing
+   → Array storage and access
+   → Pointer arithmetic
+   → Hardware register simulation
+
+03_structs_bitfields.c
+   → Organizing data with structs
+   → Bit fields for hardware registers
+   → Array of structs (multiple sensors)
+   → Pointers to structs
+
+04_practical_tasks.c
+   → ADC reading and conversion
+   → Drone telemetry simulation
+   → State management
+   → Bit manipulation
+   → Sensor filtering
+
+05_functions_modularity.c
+   → Function design for embedded systems
+   → Sensor driver patterns
+   → Motor control abstraction
+   → Filter implementation
+   → Real-time loop simulation
+
+================================================================================
+5. HOW TO COMPILE & RUN (Linux Ubuntu 22.04)
+================================================================================
+
+Basic Compilation:
+   $ gcc -o program_name program_name.c
+
+With warnings (recommended):
+   $ gcc -Wall -Wextra -o program_name program_name.c
+
+With optimization (for embedded):
+   $ gcc -O2 -o program_name program_name.c
+
+With math library:
+   $ gcc -o program_name program_name.c -lm
+
+Run the program:
+   $ ./program_name
+
+Debug with gdb:
+   $ gcc -g -o program_name program_name.c
+   $ gdb ./program_name
+
+================================================================================
+6. LEARNING PATH
+================================================================================
+
+Week 1-2: Fundamentals
+   - Understand data types and memory
+   - Learn pointers thoroughly
+   - Master arrays
+
+Week 3-4: Structures
+   - Work with structs
+   - Learn bit fields
+   - Practice pointer-to-struct
+
+Week 5-6: Functions & Modularity
+   - Write clean functions
+   - Create sensor drivers
+   - Implement filters
+
+Week 7-8: Real-time Concepts
+   - Study RTOS basics
+   - Learn about interrupts
+   - Understand timing constraints
+
+Week 9-12: Projects
+   - Build a sensor driver
+   - Create a simple state machine
+   - Implement a motor controller
+
+================================================================================
+7. NEXT STEPS AFTER BASICS
+================================================================================
+
+After mastering this material:
+   1. Learn microcontroller architecture (ARM Cortex-M)
+   2. Study hardware: GPIO, PWM, ADC, I2C, SPI, UART
+   3. Learn RTOS: FreeRTOS or Linux kernel
+   4. Practice on real hardware: Arduino, STM32, Raspberry Pi
+   5. Study communication protocols: CAN, RS485, wireless
+   6. Build a real project: drone controller, robot, sensor system
+
+For the Liberaware job specifically:
+   - Deep dive into C++ (they use it alongside C)
+   - Learn ROS (Robot Operating System)
+   - Study autonomous systems and SLAM
+   - Practice with Jetson boards
+
+================================================================================
+8. USEFUL RESOURCES
+================================================================================
+
+Books:
+   - "The C Programming Language" by Kernighan & Ritchie
+   - "Embedded Systems: Real-Time Operating Systems for ARM Cortex-M" by Dean
+   - "Making Embedded Systems" by Elecia White
+
+Online:
+   - Coursera: Embedded Systems Specialization
+   - Udemy: C Programming for Embedded Systems
+   - GitHub: Open-source embedded projects
+   - STMicroelectronics: HAL documentation
+
+Practice:
+   - LeetCode (for C fundamentals)
+   - Build projects on Arduino
+   - Contribute to FreeRTOS or other embedded projects
+
+================================================================================
+QUICK REFERENCE: ESSENTIAL C SYNTAX FOR EMBEDDED
+================================================================================
+
+// Basic types
+uint8_t byte_value;      // 0-255
+uint16_t word_value;     // 0-65535
+int32_t signed_value;    // -2B to +2B
+float floating_value;    // 3.14
+
+// Pointers
+int *ptr = &variable;    // Address of
+int value = *ptr;        // Dereference
+
+// Struct
+typedef struct {
+    uint16_t x;
+    uint16_t y;
+} Coordinate;
+
+// Bit operations
+value |= (1 << 3);       // Set bit 3
+value &= ~(1 << 3);      // Clear bit 3
+if (value & (1 << 3)) {} // Check bit 3
+
+// Array
+uint16_t buffer[10];     // 10-element array
+buffer[0] = 100;         // Access element
+
+// Function
+int add(int a, int b) { return a + b; }
+
+// Loop
+for (int i = 0; i < 10; i++) { ... }
+while (condition) { ... }
+
+================================================================================
