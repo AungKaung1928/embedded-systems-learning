@@ -333,8 +333,3 @@ Memory Address:
 Stack variables:    int x = 10;      (automatic cleanup)
 Heap variables:     int *p = malloc(sizeof(int));  (manual cleanup)
 Static variables:   static int x = 0;  (persistent)
-
-╔════════════════════════════════════════════════════════════════════════════════╗
-║                          PRINT THIS SHEET!                                    ║
-║                    Keep it next to you while learning C                       ║
-╚════════════════════════════════════════════════════════════════════════════════╝
