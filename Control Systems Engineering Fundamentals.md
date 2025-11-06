@@ -723,7 +723,7 @@ void motor_control_update(MotorController *mc) {
 
 ---
 
-## Interview Questions
+## Useful knowledges for Control System Engineering
 
 **Q1: "Explain P, I, and D terms in your own words."**
 **A:** P reacts to current error (immediate response), I eliminates persistent error (accumulates over time), D predicts future error based on trend (damping/smoothing).
