@@ -79,15 +79,6 @@ C++ essentials for modern embedded systems development.
 - Best practices for embedded C++
 - Real-world examples (motor controllers, sensors)
 
-### **07_Interview_Prep/**
-Complete interview preparation materials.
-- **File:** `cheatsheet.md` - 60+ interview Q&A
-- **File:** `formulas.txt` - All essential formulas
-- Common technical interview questions with answers
-- Coding problems and solutions
-- Interview checklist
-- Japanese interview tips
-
 ---
 
 ## 🚀 Quick Start
