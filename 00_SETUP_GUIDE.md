@@ -5,8 +5,6 @@
 ```
 embedded-systems-learning/
 │
-├── README.md (main overview - use provided one)
-│
 ├── 01_C_Programming/
 │   ├── README.md
 │   ├── 01_hello_embedded.c 
@@ -14,27 +12,26 @@ embedded-systems-learning/
 │   ├── 03_structs_bitfields.c 
 │   ├── 04_practical_tasks.c 
 │   ├── 05_functions_modularity.c 
-│   └── CHEAT_SHEET.txt 
 │
 ├── 02_Electrical_Circuits/
 │   ├── README.md
-│   └── 01_basics.md (provided: 02_Electrical_Circuits_basics.md)
+│   └── 01_basics.md
 │
 ├── 03_Embedded_Systems/
 │   ├── README.md
-│   └── 01_fundamentals.md (provided: 03_Embedded_Systems_Fundamentals.md)
+│   └── 01_fundamentals.md 
 │
 ├── 04_Control_Systems/
 │   ├── README.md
-│   └── 01_fundamentals.md (provided: 04_Control_Systems_Fundamentals.md)
+│   └── 01_fundamentals.md 
 │
 ├── 05_MATLAB_Simulink/
 │   ├── README.md
-│   └── 01_basics.md (provided: 05_MATLAB_Simulink_Basics.md)
+│   └── 01_basics.md 
 │
 ├── 06_CPP_Programming/
 │   ├── README.md
-│   └── 01_essentials.md (provided: 06_CPP_Embedded_Essentials.md)
+│   └── 01_essentials.md 
 
 ```
 
