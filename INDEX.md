@@ -67,7 +67,7 @@
 
 ### Electrical Engineering
 - [02_Electrical_Circuits_basics.md](02_Electrical_Circuits_basics.md)
-- [FORMULAS_CHEATSHEET.txt](FORMULAS_CHEATSHEET.txt) (electrical section)
+- [FORMULAS_CHEATSHEET.md](FORMULAS_CHEATSHEET.txt) (electrical section)
 
 ### Embedded Programming
 - [03_Embedded_Systems_Fundamentals.md](03_Embedded_Systems_Fundamentals.md)
