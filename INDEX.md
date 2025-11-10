@@ -67,16 +67,16 @@
 
 ### Electrical Engineering
 - [02_Electrical_Circuits_basics.md](02_Electrical_Circuits_basics.md)
-- [FORMULAS_CHEATSHEET.md](FORMULAS_CHEATSHEET.txt) (electrical section)
+- [FORMULAS_CHEATSHEET.md](FORMULAS_CHEATSHEET.md) (electrical section)
 
 ### Embedded Programming
 - [03_Embedded_Systems_Fundamentals.md](03_Embedded_Systems_Fundamentals.md)
 - [06_CPP_Embedded_Essentials.md](06_CPP_Embedded_Essentials.md)
-- Your existing C files (01_C_Programming/)
+- Existing C files (01_C_Programming/)
 
 ### Control Systems
 - [04_Control_Systems_Fundamentals.md](04_Control_Systems_Fundamentals.md)
 - [05_MATLAB_Simulink_Basics.md](05_MATLAB_Simulink_Basics.md)
-- [FORMULAS_CHEATSHEET.txt](FORMULAS_CHEATSHEET.txt) (control section)
+- [FORMULAS_CHEATSHEET.md](FORMULAS_CHEATSHEET.md) (control section)
 
 ---
