@@ -63,21 +63,6 @@
 
 ---
 
-### 🎯 Interview Preparation
-
-9. **[07_Interview_Prep_Cheatsheet.md](07_Interview_Prep_Cheatsheet.md)** ⭐ **BEFORE INTERVIEWS!**
-   - 60+ Q&A
-   - Coding problems
-   - Interview checklist
-   - **12 KB | 30 min read**
-
-10. **[FORMULAS_CHEATSHEET.txt](FORMULAS_CHEATSHEET.txt)** 📋 **PRINT THIS!**
-    - All essential formulas
-    - One-page reference
-    - **5 KB | Quick reference**
-
----
-
 ## 📊 By Category
 
 ### Electrical Engineering
@@ -93,9 +78,5 @@
 - [04_Control_Systems_Fundamentals.md](04_Control_Systems_Fundamentals.md)
 - [05_MATLAB_Simulink_Basics.md](05_MATLAB_Simulink_Basics.md)
 - [FORMULAS_CHEATSHEET.txt](FORMULAS_CHEATSHEET.txt) (control section)
-
-### Interview Prep
-- [07_Interview_Prep_Cheatsheet.md](07_Interview_Prep_Cheatsheet.md)
-- All other documents (review before interview)
 
 ---
