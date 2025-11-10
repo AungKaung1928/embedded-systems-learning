@@ -35,11 +35,6 @@ embedded-systems-learning/
 ├── 06_CPP_Programming/
 │   ├── README.md
 │   └── 01_essentials.md (provided: 06_CPP_Embedded_Essentials.md)
-│
-└── 07_Interview_Prep/
-    ├── README.md
-    ├── cheatsheet.md (provided: 07_Interview_Prep_Cheatsheet.md)
-    └── formulas.txt (provided: FORMULAS_CHEATSHEET.txt)
 ```
 
 ---
@@ -57,7 +52,6 @@ mkdir 03_Embedded_Systems
 mkdir 04_Control_Systems
 mkdir 05_MATLAB_Simulink
 mkdir 06_CPP_Programming
-mkdir 07_Interview_Prep
 ```
 
 ### Step 2: Add New Content
@@ -70,7 +64,6 @@ Place the provided markdown files:
 - `04_Control_Systems_Fundamentals.md` → `04_Control_Systems/01_fundamentals.md`
 - `05_MATLAB_Simulink_Basics.md` → `05_MATLAB_Simulink/01_basics.md`
 - `06_CPP_Embedded_Essentials.md` → `06_CPP_Programming/01_essentials.md`
-- `07_Interview_Prep_Cheatsheet.md` → `07_Interview_Prep/cheatsheet.md`
 - `FORMULAS_CHEATSHEET.txt` → `07_Interview_Prep/formulas.txt`
 
 ### Step 3: Create Folder README Files
