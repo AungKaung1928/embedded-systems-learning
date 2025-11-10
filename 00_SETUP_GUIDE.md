@@ -98,8 +98,6 @@ git push origin main
 
 ---
 
-## 📚 What You Now Have
-
 ### ✅ Complete Learning Path
 1. **C Programming** - Foundation (your existing work)
 2. **Electrical Circuits** - Hardware basics
@@ -114,17 +112,5 @@ git push origin main
 - Design patterns
 - Best practices
 - Common problems & solutions
-
----
-
-## 🎯 How to Use This Repository
-
-### For Learning
-1. **Start with 01_C_Programming** - Master C basics
-2. **Move to 02_Electrical_Circuits** - Understand hardware
-3. **Study 03_Embedded_Systems** - Learn MCU programming
-4. **Learn 04_Control_Systems** - Control theory
-5. **Practice 05_MATLAB_Simulink** - Simulation
-6. **Advance to 06_CPP_Programming** - Modern embedded
 
 ---
