@@ -73,21 +73,7 @@ I've created a **comprehensive embedded systems learning curriculum** for your G
 - Real-world examples
 - 11 KB | ~2,500 words
 
-### 7. **07_Interview_Prep_Cheatsheet.md**
-**Topics:**
-- 60+ common interview Q&A
-- Embedded systems basics
-- Memory and pointers
-- Communication protocols
-- Control systems
-- Firmware development
-- C/C++ programming
-- Coding problems with solutions
-- Essential formulas
-- Interview checklist
-- 12 KB | ~3,000 words
-
-### 8. **FORMULAS_CHEATSHEET.txt**
+### 7. **FORMULAS_CHEATSHEET.txt**
 - Quick reference for all essential formulas
 - Electrical circuits
 - Control systems
@@ -95,7 +81,7 @@ I've created a **comprehensive embedded systems learning curriculum** for your G
 - One-page printable format
 - 5 KB
 
-### 9. **00_SETUP_GUIDE.md**
+### 8. **00_SETUP_GUIDE.md**
 - Step-by-step repository setup
 - Recommended folder structure
 - Git commands
@@ -130,7 +116,4 @@ embedded-systems-learning/
 │   └── 01_basics.md
 ├── 06_CPP_Programming/
 │   └── 01_essentials.md
-└── 07_Interview_Prep/
-    ├── cheatsheet.md
-    └── formulas.txt
 ```
