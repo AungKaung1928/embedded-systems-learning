@@ -8,12 +8,6 @@
 
 A comprehensive, structured repository covering fundamental concepts in **Embedded Systems Engineering**, **Control Systems**, **Electrical Circuits**, **C/C++ Programming**, and **MATLAB/Simulink** - designed for engineers transitioning into embedded systems or preparing for technical interviews in Japan.
 
-## 🎯 Who This Is For
-
-- Mechanical/Electrical engineers transitioning to embedded systems
-- Software engineers learning hardware programming
-- Self-taught developers entering embedded/firmware roles
-
 ---
 
 ## 📁 Repository Structure
