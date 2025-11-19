@@ -1,19 +1,21 @@
 # Embedded Systems Engineering - Complete Learning Repository
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Language](https://img.shields.io/badge/language-C%2FC%2B%2B-green.svg)
-![Status](https://img.shields.io/badge/status-Active-success.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![C](https://img.shields.io/badge/language-C-blue.svg)](https://en.cppreference.com/w/c)
+[![C++](https://img.shields.io/badge/language-C%2B%2B-blue.svg)](https://en.cppreference.com/w/cpp)
+[![Status](https://img.shields.io/badge/status-Active-success.svg)](https://github.com/AungKaung1928/embedded-systems-learning)
 
-## 📚 Overview
+##  Overview
 
 A comprehensive, structured repository covering fundamental concepts in **Embedded Systems Engineering**, **Control Systems**, **Electrical Circuits**, **C/C++ Programming**, and **MATLAB/Simulink** - designed for engineers transitioning into embedded systems or preparing for technical interviews in Japan.
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ### **01_C_Programming/**
 Foundation C programming for embedded systems with hands-on examples.
+
 - **Files:** `01_hello_embedded.c` through `05_functions_modularity.c`
 - Data types, pointers, memory management
 - Bit manipulation and hardware register access
@@ -23,6 +25,7 @@ Foundation C programming for embedded systems with hands-on examples.
 
 ### **02_Electrical_Circuits/**
 Essential electrical circuit theory for embedded engineers.
+
 - **File:** `01_basics.md`
 - Ohm's Law, Kirchhoff's Laws, Power calculations
 - Passive components (R, L, C, Diodes)
@@ -32,6 +35,7 @@ Essential electrical circuit theory for embedded engineers.
 
 ### **03_Embedded_Systems/**
 Core embedded systems concepts with detailed explanations.
+
 - **File:** `01_fundamentals.md`
 - Microcontroller architecture (ARM Cortex-M, Harvard vs Von Neumann)
 - Memory organization (Flash, SRAM, Stack, Heap)
@@ -43,6 +47,7 @@ Core embedded systems concepts with detailed explanations.
 
 ### **04_Control_Systems/**
 Control theory fundamentals with practical implementations.
+
 - **File:** `01_fundamentals.md`
 - Open-loop vs Closed-loop control
 - Complete PID controller theory and implementation
@@ -54,6 +59,7 @@ Control theory fundamentals with practical implementations.
 
 ### **05_MATLAB_Simulink/**
 MATLAB/Simulink for control system design and simulation.
+
 - **File:** `01_basics.md`
 - Essential MATLAB commands and syntax
 - Control System Toolbox
@@ -65,6 +71,7 @@ MATLAB/Simulink for control system design and simulation.
 
 ### **06_CPP_Programming/**
 C++ essentials for modern embedded systems development.
+
 - **File:** `01_essentials.md`
 - Classes and objects for hardware abstraction
 - RAII pattern and resource management
@@ -75,9 +82,10 @@ C++ essentials for modern embedded systems development.
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
+
 ```bash
 # C Compiler (GCC)
 sudo apt-get install build-essential  # Linux
@@ -92,6 +100,7 @@ sudo apt-get install gcc-arm-none-eabi
 ```
 
 ### Run Your First Program
+
 ```bash
 # Clone repository
 git clone https://github.com/AungKaung1928/embedded-systems-learning.git
