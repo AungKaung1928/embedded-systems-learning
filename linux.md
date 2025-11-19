@@ -1,7 +1,7 @@
 # Linux Fundamentals for Embedded Systems & Robotics
 
 ## Table of Contents
-1. [Why Linux for Embedded/Robotics?](#why-linux)
+1. [Why Linux for Embedded/Robotics?](#why-linux-for-embeddedrobotics)
 2. [File System Navigation](#file-system-navigation)
 3. [File Operations](#file-operations)
 4. [File Permissions](#file-permissions)
@@ -10,7 +10,7 @@
 7. [Text Processing](#text-processing)
 8. [Package Management](#package-management)
 9. [Networking](#networking)
-10. [ROS2/Embedded Specific](#ros2-embedded-specific)
+10. [ROS2/Embedded Specific](#ros2embedded-specific-commands)
 
 ---
 
