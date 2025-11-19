@@ -727,7 +727,3 @@ colcon build            # Build workspace
 ```
 
 ---
-
-**Master these Linux fundamentals and you'll be productive in embedded systems and robotics development! 🐧🚀**
-
-**For ROS2 development, Ubuntu 22.04 with ROS2 Humble is recommended.**
