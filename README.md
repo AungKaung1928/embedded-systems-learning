@@ -1,10 +1,5 @@
 # Embedded Systems Engineering - Complete Learning Repository
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![C](https://img.shields.io/badge/language-C-blue.svg)](https://en.cppreference.com/w/c)
-[![C++](https://img.shields.io/badge/language-C%2B%2B-blue.svg)](https://en.cppreference.com/w/cpp)
-[![Status](https://img.shields.io/badge/status-Active-success.svg)](https://github.com/AungKaung1928/embedded-systems-learning)
-
 ##  Overview
 
 A comprehensive, structured repository covering fundamental concepts in **Embedded Systems Engineering**, **Control Systems**, **Electrical Circuits**, **C/C++ Programming**, and **MATLAB/Simulink** - designed for engineers transitioning into embedded systems or preparing for technical interviews in Japan.
@@ -113,3 +108,7 @@ gcc -o hello 01_hello_embedded.c
 ```
 
 ---
+
+## License
+
+MIT, see LICENSE.
