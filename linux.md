@@ -54,7 +54,7 @@
 **pwd** - Print Working Directory
 ```bash
 pwd
-# Output: /home/username/catkin_ws
+# Output: the full path, e.g. /opt/catkin_ws
 ```
 
 **ls** - List directory contents
@@ -68,7 +68,7 @@ ls *.c          # List only .c files
 
 **cd** - Change Directory
 ```bash
-cd /home/username       # Absolute path
+cd /opt/ros            # Absolute path
 cd Documents           # Relative path
 cd ..                  # Up one directory
 cd ~                   # Home directory
@@ -106,7 +106,7 @@ mkdir -p path/to/deep/directory    # Create parent dirs
 **cp** - Copy files/directories
 ```bash
 cp source.txt destination.txt
-cp file.txt /home/user/backup/
+cp file.txt ~/backup/
 cp -r folder/ /backup/              # Recursive (directories)
 cp *.c /project/src/                # Copy all .c files
 ```
